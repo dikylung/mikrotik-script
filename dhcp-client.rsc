@@ -17,6 +17,8 @@
 #      is getting new IP Address.
 # Reference:
 #   1. Original script is from https://wiki.mikrotik.com/wiki/Manual:IP/DHCP_Client#Lease_script_example
+#   2. Super Useful info on policy routing at: https://wiki.mikrotik.com/wiki/Manual:PCC#Explanation
+#   3. Get network address from ip and netmask https://wiki.mikrotik.com/wiki/Manual:Scripting#Bitwise_Operators
 
 #==========================================#
 # Basic Vars (modify to suit your network) #
