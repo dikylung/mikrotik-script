@@ -1,10 +1,13 @@
 # DHCP Client Mikrotik script for PCC
+# Version: 1.0
 # Author: Diky Muljana <dqsolution_AT_gmail.com>
-# Description: This script is to be installed with Mikrotik ROS version 6.3 and above 
+# Description: This script is for using PCC with DHCP WAN 
 # What the script does:
 #   1. Setup ip mangle preroute for dhcpclient direct attached network to avoid route loops
 #   2. Setup default gw for unmarked route
 #   3. Setup default gw for marked route
+# Requirement:
+#   1. Mikrotik ROS 6.39rc33 or above
 # Installation:
 #   1. Change gwdistance, gwmarkdistance, listLanIF,  to suit your network
 #   2. Copy and Paste this script to IP->Dhcp-client->Advance->Script
@@ -12,6 +15,8 @@
 # Note:
 #   1. $interface, $bound, $gateway-address is populated by Mikrotik ROS when DHCP-Client
 #      is getting new IP Address.
+# Reference:
+#   1. Original script is from https://wiki.mikrotik.com/wiki/Manual:IP/DHCP_Client#Lease_script_example
 
 #==========================================#
 # Basic Vars (modify to suit your network) #
